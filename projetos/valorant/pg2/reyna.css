@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@font-face {
+    font-family: f2;
+    src: url('../fontes/Family\ Home.ttf');
+}
+@font-face{
+    font-family: valorant;
+    src: url('../fontes/Valorant\ Font.ttf');
+}
+@font-face{
+    font-family: fo;
+    src: url('fontes/KGWhattheTeacherWants.ttf')
+}
+@font-face{
+    font-family: tug;
+    src: url('../fontes/Tungsten-Bold.ttf');
+}
+@font-face{
+    font-family: f4;
+    src: url('../fontes/665-font.otf');
+}
+
+body{
+    margin: 0px;
+}
+body{
+    background-image: url('../imgreynaa/3717299.jpg');
+    background-size: cover;
+    background-color: rgb(34, 20, 43);
+    top: 400px;
+    background-repeat: no-repeat;
+}
+
+
+
+@keyframes movimento{
+    from { background-position: 0 0;}
+    to { background-position: 100% 100%;}
+}
+
+.desc > h2{
+    font-size: 40px;
+    font-family: tug;
+    position: relative;
+    left: 20px;
+    top: -40px;
+    background-image: url('../imagens/Duelist.png');
+    background-repeat: no-repeat;
+    background-position: 110px 9px;
+    background-size: 25px;
+}
+.desc > h3{
+    margin-left: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.desc > p{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -15px;
+    margin: 5px;
+    
+}
+.desc:hover{
+
+}
+
+nav.bg {
+
+    width:100%;
+    float:left; 
+    text-align:center;  
+    background-color: rgba(34, 20, 43, 0.699);
+    padding:1.5em 0em;
+
+}
+
+nav a {
+
+    position: relative;
+    display: inline-block;
+    margin:5px 30px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition:0.6s; 
+
+}
+
+nav a:hover,
+nav a:focus {
+
+    transition:0.4s;
+    outline: none;
+    color:#e750ec; 
+
+}
+.bg a::before,
+.bg a::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75px;
+    height: 75px;
+    border: 2px solid rgba(130, 0, 252, 0.18);
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.bg a::after {
+    width: 50px;
+    height: 50px;
+    border-width: 6px;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.bg a:hover::before,
+.bg a:hover::after,
+.bg a:focus::before,
+.bg a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+
+
+
+
+ 
+ 
+ 
+ .container {
+   width: 220px;
+   height: 220px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+ }
+ 
+ .box {
+   position: absolute;
+   width: 320px;
+   height: 390px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   border-radius: 3px;
+   overflow: hidden;
+   -webkit-transition: -webkit-box-shadow ease 1s;
+   transition: -webkit-box-shadow ease 1s;
+   transition: box-shadow ease 1s;
+   transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;
+ }
+ 
+ .icon {
+   position: relative;
+   margin-top: 8px;
+   -webkit-transition: all 0.6s ease;
+   transition: all 0.6s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+   will-change: transform;
+ }
+ 
+ .icon_bg {
+   width: 80px;
+   height: 80px;
+   border-radius: 100%;
+   border: 1px solid rgba(225, 227, 232, 0.18);
+   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+   background-image: url('../imagens/Duelist.png');
+   background-size: 80px;
+   background-repeat: no-repeat;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-transition: all 0.6s ease;
+   transition: all 0.6s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+   will-change: transform;
+ }
+ 
+ .title {
+    font-size: 40px;
+   position: relative;
+   font-family: tug;
+   color: white;
+ }
+ 
+ .super-box:hover .box {
+ /*   border: 1px solid rgba(225, 227, 232, 0.18); */
+   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+ 
+ .super-box:hover .icon_bg {
+   -webkit-transform: translateY(-32px) scale(6);
+           transform: translateY(-32px) scale(6);
+           opacity: 0;
+ }
+ 
+ .super-box:hover .icon {
+   -webkit-transform: translateY(-48px) scale(1.4);
+           transform: translateY(-48px) scale(1.4);
+ }
+ 
+ .super-box {
+    width: 220px;
+   height: 220px;
+   position: relative;
+   left: 6%;
+   top: 100px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+ }
+ 
+ .text {
+   position: relative;
+   top: -32px;
+   width: 300px;
+   text-align: center;
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+ 
+ .super-box:hover .text {
+   opacity: 0;
+   -webkit-transform: translateY(-4px) scale(.8);
+           transform: translateY(-4px) scale(.8);
+   
+ }
+ .box::after {
+    background-image: linear-gradient(to bottom right, rgba(159, 20, 187, 0.726) 0%, rgba(170, 19, 184, 0.726) 40%, rgba(208, 107, 255, 0.719) 60%, rgba(255, 52, 211, 0.712) 100%);
+    background-size: 200% 200%;
+    animation: movimento 3s linear infinite alternate;
+   content:"Criada no coração do México, Reyna domina o combate individual, destacando-se a cada abate efetuado. Sua capacidade só é limitada por sua própria perícia, tornando-a bastante dependente de desempenho.";
+   position: absolute;
+   width: 290px;
+   top: 111px;
+   opacity: 0;
+   font-size: 20px;
+   border-radius: 8px;
+   color: #ffffff;
+   line-height: 20px;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+ 
+ .super-box:hover .box::after {
+   opacity: 1;
+ }
+
+.dr {
+position: absolute;
+  bottom: 16px; 
+  right: 16px;
+  width:100px;
+}
+ 
+
