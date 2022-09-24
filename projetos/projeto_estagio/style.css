@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+.container {   
+    position: relative;
+    display: inline-block;
+ 
+    
+  }
+
+div.container-topo{
+}
+
+div.fa-map-marker{
+    position: relative;
+    color: #f44336;
+    width: 100vw;
+    text-align:left;
+    padding: 0px;
+    display: inline-block;
+
+}
+
+div.container-meio-topo{
+
+}
+
+div.abas{
+    background-color: white;
+
+}
+
+div.background img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
