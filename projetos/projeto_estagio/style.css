@@ -1,15 +1,31 @@
 @charset "UTF-8";
 
 
-.container {   
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html, body {
+    width: 100%;
+}
+
+body {
+    height:100%;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 300;
+    padding:0;
+    margin:0;
+    font-size:14px;
+    line-height: 28px;
+    color: #777; 
+    background: #fff; 
     position: relative;
+}
+
+
+.container {   
     display: inline-block;
- 
-    
+  
   }
 
-div.container-topo{
-}
 
 div.fa-map-marker{
     position: relative;
@@ -21,13 +37,56 @@ div.fa-map-marker{
 
 }
 
-div.container-meio-topo{
+div.abas{
+    height: 630px;
+    width: 640px;
+    color: white;
+    text-align: center;
+    z-index: 1;    
+}
+div.abas{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.abas > .fa-plane, .fa-bed, .fa-automobile{
+    height: auto;
+    width: 200px;
+    margin: -2px;
+    background-color: black;
+    background-size: 500px;
+    justify-content: space-between;
+}
+.abas > .fa-plane:hover, .fa-bed:hover, .fa-automobile:hover{
+    height: auto;
+    width: 240px;
+    margin: -2px;
+    background-color: #f44336;
+    background-size: 500px;
+    justify-content: space-between;
+    transition: .6s;
+}
+.abas > .aviao, .cama, .carro, .aviao{
+    display: inline-block;
+}
+
+
+div.form{ 
+    left: 18%;
+    top: 200px;
+    width: 60vw;
+    height: 20vh;
+    color: black;
+    background-color: white;
+    z-index: 1;
+    display: auto;
 
 }
 
-div.abas{
-    background-color: white;
 
+.form > .from{
+    height: 500px;
+    padding-right: 10px;
 }
 
 div.background img{
@@ -35,4 +94,5 @@ div.background img{
     height: 100vh;
     width: 100vw;
 }
+
 
