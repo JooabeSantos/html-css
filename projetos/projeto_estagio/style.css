@@ -60,7 +60,8 @@ body {
   gap: 22px ;
   color: white;
   background-color: black;
-  width: 600px;
+  width: 700px;
+  padding: 0px;
 
 }
 
@@ -70,13 +71,13 @@ body {
   display: flex;
   gap: 10vh;
   background-color: white;
-  height: 10vh;
-  width: 600px;
+  height: 20vh;
+  width: 700px;
   }
 
 div .iform{
   height: 4vh;
-  width: 20vw;
+  width: 15vw;
   position: relative;
   display: inline-flex;
   border: black solid 1px;
@@ -86,6 +87,23 @@ div .iform{
   align-items: center;
   }
 
+div .fa{
+  padding: 6px;
+  display: flex;
+  cursor: pointer;
+}
 
+.fa-bed:hover{
+ position: relative;
+ background-color: chocolate;
+ width: auto;
+ display: flex;
+ justify-content: center;
+}
 
-
+.fa-automobile:hover{
+  background-color: chocolate;
+  width: 20vh;
+  display: flex;
+  justify-content: center;
+}
