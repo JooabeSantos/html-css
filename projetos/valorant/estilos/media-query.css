@@ -1,0 +1,11 @@
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../img/icon-pc.png);
+    }
+    img#iphone {display: none;}
+    img#itablet {display: none;}
+    img#iprint {display: none;}
+    img#ipc {display: block;}
+    img#itv {display: none;}
+}

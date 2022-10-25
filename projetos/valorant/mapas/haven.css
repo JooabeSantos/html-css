@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  width: 100vw;
+  height: 100vh;
+}
+h1{
+    font-size: 100%;
+    text-align: center;
+}
+.bg {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bombs {
+    background-color: white;
+    width: 2vw;
+    height: 2vh;
+}

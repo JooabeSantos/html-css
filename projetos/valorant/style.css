@@ -11,89 +11,26 @@
     font-family: f1;
     src: url('fontes/KGWhattheTeacherWants.ttf')
 }
-nav.bg {
-
-  width:100%;
-  float:left; 
-  text-align:center;  
-  background-color: rgba(34, 20, 43, 0.699);
-  padding:1.5em 0em;
+*{
+  margin: 0px;
+  padding: 0px;
 
 }
 
-nav a {
-
-  position: relative;
-  display: inline-block;
-  margin:5px 30px;
-  outline: none;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.3em;
-  transition:0.6s; 
-
+html{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: rgba(151, 37, 37, 0.76);
 }
 
-nav a:hover,
-nav a:focus {
+.h1 {
+  font-size: 50px;
+  font-family: family;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 2px 8px;;
 
-  transition:0.4s;
-  outline: none;
-  color:#e750ec; 
-
-}
-.bg a::before,
-.bg a::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 75px;
-  height: 75px;
-  border: 2px solid rgba(130, 0, 252, 0.18);
-  border-radius: 50%;
-  content: '';
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
-  -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
-  transform: translateX(-50%) translateY(-50%) scale(0.2);
-}
-
-.bg a::after {
-  width: 50px;
-  height: 50px;
-  border-width: 6px;
-  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
-  -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
-  transform: translateX(-50%) translateY(-50%) scale(0.8);
-}
-
-.bg a:hover::before,
-.bg a:hover::after,
-.bg a:focus::before,
-.bg a:focus::after {
-  opacity: 1;
-  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-  -moz-transform: translateX(-50%) translateY(-50%) scale(1);
-  transform: translateX(-50%) translateY(-50%) scale(1);
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-h1{
-    font-size: 900px;
-    text-align: center;
-    font-family: f1;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 7px black;
-    position: static;
-    left: 50vh;
 }
 
 img{
@@ -144,6 +81,7 @@ html {
   position: relative;
   z-index: 1;
   height: 100%;
+  left: 30px;
   max-width: 400px;
   margin: 50px auto;
 }
