@@ -13,13 +13,9 @@ h1{
     font-size: 100%;
     text-align: center;
 }
-.bg {
-    width: 100vw;
-    height: 100vh;
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
 
-.bombs {
-    background-color: white;
-    width: 2vw;
-    height: 2vh;
-}

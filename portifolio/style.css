@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+html{
+    height: 1000vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+
+#background-image{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('imagens/laptop-technology-electronic-device-netbook-space-bar-gadget-1523041-pxhere.com.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.social{
+    border-radius: 5px;
+    position: relative;
+    max-height: 6vh;
+    max-width: 4.1vw;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+
+
+.skills-background{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container-skills h1 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 97pt;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.skills {
+    width: 1vw;
+    height: 1vh; 
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    
+}
+#container-skills > .skills{
+    position: absolute;
+    top:150vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skill > img{
+    height: 20vh;
+    background-color: rgba(94, 94, 94, 0.267);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px;
+}
+
+.skill > img:hover{
+    height: 23vh;
+    background-color: rgba(94, 94, 94, 0.603);
+    transition: 0.5s;
+}
+
+
+
+.nav {
+    width:100%;
+    height: 1vh;
+    float:left; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    padding:1.5em 0em;
+    transition: 2s; 
+    position: fixed;
+    top:-1px;
+}
+  
+.nav a {
+    position: relative;
+    display: flex;
+    margin:1px 30px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition:0.6s; 
+}
+  
+.nav a:hover,
+.nav a:focus {
+    transition:0.4s;
+    outline: none;
+    color:#777777; 
+
+}
+.nav a::before,
+.nav a::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65px;
+    height: 65px;
+    border: 2px solid rgba(0, 0, 0, 0.18);
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+
+}
+
+.nav a::after {
+    width: 40px;
+    height: 40px;
+    border-width: 6px;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.nav a:hover::before,
+.nav a:hover::after,
+.nav a:focus::before,
+.nav a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.text-skill{
+    background-color: yellow;
+    color: black;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    left: 5px;
+    top: 105vh;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    top: 50vh;
+    width: 550px;
+}
+
+h1 span {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.2rem;
+    margin-left: 20px;
+}
+
+.message {
+    background-color: black;
+    color: rgb(0, 255, 13);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 100px;
+    animation: openclose 5s ease-in-out infinite;
+}
+
+.word1, .word2 {
+    font-family: 'EB Garamond', serif;
+}
+
+@keyframes openclose {
+0% {
+    top: 0.2rem;
+    width: 0;
+}
+5% {
+    width: 0;
+}
+15% {
+    width: 280px;
+}
+30% {
+    top: 0.2rem;
+    width: 280px;
+}
+33% {
+    top: 0.2rem;
+    width: 0;
+}
+35% {
+    top: 0.2rem;
+    width: 0;
+}
+38% {
+    top: -4.5rem;
+    
+}
+48% {
+    top: -4.5rem;
+    width: 240px;
+}
+62% {
+    top: -4.5rem;
+    width: 240px;
+}
+66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+}
+71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+}
+
+98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+}
+100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+}
+}
+
+
+
