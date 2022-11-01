@@ -22,7 +22,7 @@
 }
 
 body{
-    background-color: #c5ebd6;
+    background-color: #201b2c;
     font-family: var(--fonte-padrao);
 }
 
@@ -31,7 +31,7 @@ a.externo::after{
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    background-image: linear-gradient(to bottom, #201b2c, #0c1b14);
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
@@ -43,7 +43,7 @@ header > h1{
     font-family: var(--fonte-destaque);
     font-weight: normal;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253);
+    text-shadow: 2px 2px 0px #201b2c;
 }
 header > p{
     font-family: var(--fonte-padrao);
@@ -55,7 +55,7 @@ header > p{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.311);
 }
 nav{
-    background-color: var(--cor5);
+    background-color: #201b2c;
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.311);
     
@@ -96,7 +96,7 @@ main h2 {
     color: var(--cor4);
     font-size: 1.3em;
     font-weight: normal;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
+    background-image: linear-gradient(to right, #aa90e7, transparent);
     text-indent: 8px;
 }
 
@@ -115,14 +115,14 @@ main strong {
 main a{
     text-decoration: none;
     font-weight: bold;
-    color: var(--cor5);
-    background-color: var(--cor1);
+    color: rgb(255, 255, 255);
+    background-color: #201b2c;
     padding: 2px 6px;
 }
 
 main a:hover {
     text-decoration: underline;
-    color: var(--cor4);
+    color: #0aeb3a;
 }
 main img {
     width: 100%;
@@ -135,7 +135,7 @@ main img.pequena {
 }
 
 div.video{
-    background-color: var(--cor5);
+    background-color: #201b2c;
     margin-bottom: 30px;
     margin: 0px -20px 30px -20px;
     padding: 20px;
@@ -152,13 +152,13 @@ div.video > iframe {
 }
 
 aside{
-    background-color: var(--cor2);
+    background-color: #9f87d6;
     padding: 10px;
     border-radius: 10px;
 }
 
 aside > h3{
-    background-color: var(--cor4);
+    background-color: #130a25;
     color:white;
     padding: 10px;
     margin: -10px -10px 0px -10px;
@@ -175,7 +175,7 @@ aside > ul{
 }
 
 footer{
-    background-color: var(--cor5);
+    background-color:#0d0324;
     color: white     ;
     text-align: center;
     font-size: 0.8;
