@@ -1,0 +1,57 @@
+<?php
+session_start();//inicial
+date_default_timezone_set('America/Sao_Paulo');
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="main">
+        
+        <div class="container">
+            <div class="container-left">
+                <h1>Ponto</h1>
+                <?php
+                    if(isset($_SESSION['msg'])){
+                        echo $_SESSION['msg'];
+                        unset ($_SESSION['msg']);
+                    }
+                ?>
+                <form action="index.php" method="POST" id="form-hrs">
+                    <input placeholder="Projeto" type="text" name="project" id="projecti" >
+                    <input type="text" name="horas" placeholder="Hora do inicio" >
+                    <p id="horario"><?php echo date("d/m/Y H:i:s"); ?></p>
+                    <a class="btn" href="registrar_ponto.php">
+                        <h2>Atualizar</h2>
+                    </a>
+                
+                </form>
+            </div>
+
+            <div class="container-right">
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+        
+        function atualizarHorario(){
+          var data = new Date().toLocaleString("pt-br", {
+            timeZone: "America/Sao_Paulo"
+          });
+          document.getElementById("horario").innerHTML = data.replace(",","-");
+        }
+        setInterval(atualizarHorario, 1000);
+    </script>
+
+</body>
+</html>
