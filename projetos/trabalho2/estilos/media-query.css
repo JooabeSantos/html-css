@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* Todas as demais media*/
+
+/* Typical Device Breakpoints
+pequenas telas: até 600px
+celular: 600px até 768
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px */
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../img/back-print.jpg);
+    }
+    
+    main {
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    img#iphone {display: none;}
+    img#itablet {display: none;}
+    img#iprint {display: black;}
+    img#ipc {display: none;}
+    img#itv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+    img#iphone {display: none;}
+    img#itablet {display: block;}
+    img#iprint {display: none;}
+    img#ipc {display: none;}
+    img#itv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../img/icon-pc.png);
+    }
+    img#iphone {display: none;}
+    img#itablet {display: none;}
+    img#iprint {display: none;}
+    img#ipc {display: block;}
+    img#itv {display: none;}
+}
+
+@media screen and (min-width: 1200px ) {
+    body{
+        background-image: url(../img/icon-tv.png);
+    }
+    img#iphone {display: none;}
+    img#itablet {display: none;}
+    img#iprint {display: none;}
+    img#ipc {display: none;}
+    img#itv {display: block;}
+}
